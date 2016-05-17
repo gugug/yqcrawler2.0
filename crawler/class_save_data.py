@@ -16,11 +16,11 @@ class Database:
 
     def __init__(self):
         self.conn = MySQLdb.connect(
-            host='127.0.0.1',  # 192.168.235.36 fig #192.168.1.41 me #192.168.1.40 jie
+            host=''
             port=3306,
-            user='yc',
-            passwd='uliuli520',
-            db='yuqing',
+            user='',
+            passwd='',
+            db='',
             charset='utf8', )
         self.ctime = datetime.datetime.now()
         self.ltime = datetime.datetime.now() - datetime.timedelta(hours=1)
